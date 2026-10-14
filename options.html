@@ -1,0 +1,38 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Uncxity Vaughn Emotes</title>
+<style>
+  body { font: 14px system-ui, sans-serif; max-width: 560px; margin: 2em auto; }
+  label { display: block; margin-top: 1.2em; font-weight: 600; }
+  input[type=text] { width: 100%; padding: 6px; box-sizing: border-box; }
+  small { color: #666; display: block; margin-top: 2px; }
+  button { margin-top: 1.5em; padding: 6px 14px; }
+</style>
+<h2>Uncxity Vaughn Emotes</h2>
+
+<label>7TV emote set ID
+  <input type="text" id="sevenTvSetId" placeholder="01H3ZQJDPG000FFX1CY9011KZQ">
+  <small>Put ID in URL here to change emote set, defaults to Uncxity's.</small>
+</label>
+
+<label>Twitch user ID (numeric)
+  <input type="text" id="twitchId" placeholder="42649203">
+  <small>Loads that streamer's BTTV, 7TV and FFZ channel emotes. Blank = default (42649203). Type <b>none</b> to turn off.</small>
+</label>
+
+<label>FrankerFaceZ channel
+  <input type="text" id="ffzChannel" placeholder="haxitydota">
+  <small>Channel name from frankerfacez.com/channel/NAME. Blank = default (haxitydota). Type <b>none</b> to turn off.</small>
+</label>
+
+<label>Emote size (px)
+  <input type="text" id="emoteSize" placeholder="32">
+  <small>Emote height in pixels (default 32). Width scales to keep the aspect ratio.</small>
+</label>
+
+<label><input type="checkbox" id="autocomplete"> Emote autocomplete (type <b>:</b> then letters; Up/Down to pick, Tab to insert)</label>
+
+<label><input type="checkbox" id="useGlobals"> Include global 7TV + BTTV + FFZ emotes</label>
+
+<button id="save">Save</button> <button id="reset" type="button">Reset to defaults</button> <span id="status"></span>
+<script src="options.js"></script>
