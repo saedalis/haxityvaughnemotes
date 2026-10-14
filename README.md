@@ -1,6 +1,6 @@
 # Uncxity Emotes in Vaughn (7TV + BTTV)
 
-Works in Chrome and Firefox.
+Works in Chromium Browsers and Firefox.
 
 ## Install: Chrome
 chrome://extensions > Developer mode > Load unpacked > pick this folder.
